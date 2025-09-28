@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+
+    <h2>Personal Information</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+    <legend>Provide your details</legend>
+
+    <p>
+        <label for="fullname">Full Name:</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required />
+    </p>
+
+    <p>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+    </p>
+
+    <p>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="Enter a password" required />
+    </p>
+
+    <p>
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="number" min="0" />
+    </p>
+
+    <p>
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" name="dob" type="date" />
+    </p>
+
+    <p>
+        Gender:<br>
+        <input type="radio" name="gender" value="male" /> Male<br>
+        <input type="radio" name="gender" value="female" /> Female<br>
+        <input type="radio" name="gender" value="other" /> Other
+    </p>
+
+    <p>
+        Languages Known:<br>
+        <input type="checkbox" name="lang" value="english"> English<br>
+        <input type="checkbox" name="lang" value="spanish"> Spanish<br>
+        <input type="checkbox" name="lang" value="french"> French
+    </p>
+
+    <p>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select your country</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Ukraine</option>
+            <option>Canada</option>
+            <option>Other</option>
+        </select>
+    </p>
+
+    </fieldset>
+
+    <h2>College Subjects</h2>
+    <fieldset>
+    <legend>Select your subjects</legend>
+
+    <p>
+        Choose subjects:<br>
+        <select name="subjects" multiple>
+            <option>Mathematics</option>
+            <option>Computer Science</option>
+            <option>Physics</option>
+            <option>Chemistry</option>
+            <option>Biology</option>
+        </select>
+    </p>
+
+    <p>
+        Rate your interest in Computer Science:<br>
+        <input type="range" name="cs_interest" min="0" max="100" value="60" />
+    </p>
+
+    </fieldset>
+
+    <h2>Skills Assessment</h2>
+    <fieldset>
+    <legend>Assess your skills</legend>
+
+    <p>
+        <label for="skills">Describe your skills:</label><br>
+        <textarea id="skills" name="skills" placeholder="List your skills here..."></textarea>
+    </p>
+
+    <p>
+        <label for="resume">Upload your resume:</label>
+        <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" />
+    </p>
+
+    <p>
+        <label for="color">Pick your favorite color:</label>
+        <input id="color" name="color" type="color" value="#000000" />
+    </p>
+
+    <p>
+        <label for="studytime">Preferred study time:</label>
+        <input id="studytime" name="studytime" type="time" />
+    </p>
+
+    <p>
+        <button type="submit">Submit Survey</button>
+    </p>
+
+    </fieldset>
+    </form>
+
+    <p>&copy; 2025</p>
+</body>
+</html>
